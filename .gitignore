@@ -5,6 +5,6 @@ __pycache__/
 .claude/
 
 # Raw 2160x2160 COLORFUL theme renders: used with the author's permission to
-# build plugin/assets/consoles/, not redistributed as-is.
-/assets/
+# build assets/consoles/, not redistributed as-is.
+/art-source/hardware-set-source/
 *.tsbuildinfo

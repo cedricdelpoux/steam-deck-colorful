@@ -1,7 +1,7 @@
 // Feeds fixture data through the same entry points the plugin uses on the
 // Deck (window.__cpData, window.opener.collectionStore), then runs the real
-// plugin/assets/panel.js unmodified.
-import panelJsSource from "../../plugin/assets/panel.js?raw";
+// assets/panel.js unmodified.
+import panelJsSource from "../../assets/panel.js?raw";
 import type { FixtureTab } from "./fixtures/data";
 
 export function installPanelData(tabs: FixtureTab[], opts: { artBaseUrl?: string } = {}) {

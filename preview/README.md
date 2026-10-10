@@ -27,10 +27,10 @@ instead of real Steam/RetroAchievements data.
 - `src/LibraryMock.tsx`: the fake page (tab bar and grid), styled with
   [Linaria](https://github.com/callstack/linaria).
 - `src/buildPanelCss.ts`: a TypeScript port of the per-tab rules in `css.py`.
-  The static rules come from `plugin/assets/panel-structure.css`, shared with
+  The static rules come from `assets/panel-structure.css`, shared with
   the Python side.
 - `src/panelRuntime.ts`: feeds the fixture data into `window.__cpData` and
-  `window.opener.collectionStore`, then runs the real `plugin/assets/panel.js`
+  `window.opener.collectionStore`, then runs the real `assets/panel.js`
   unmodified.
 
 Clicking a game simulates gamepad focus (`.gpfocus`), and the left/right
@@ -47,8 +47,8 @@ arrow keys switch tabs like L1/R1.
 
 ## Bringing a design back to the plugin
 
-1. Static rules live in `plugin/assets/panel-structure.css` and need no
+1. Static rules live in `assets/panel-structure.css` and need no
    porting. Per-tab rules changed in `buildPanelCss.ts` must be mirrored in
-   `plugin/py_modules/css.py`.
-2. `plugin/assets/panel.js` is shared as-is.
+   `py_modules/css.py`.
+2. `assets/panel.js` is shared as-is.
 3. Build and deploy as described in [docs/DEVELOPMENT.md](../docs/DEVELOPMENT.md).

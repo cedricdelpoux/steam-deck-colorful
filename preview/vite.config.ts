@@ -4,10 +4,10 @@ import wyw from "@wyw-in-js/vite";
 import fs from "node:fs";
 import path from "node:path";
 
-// Sert les artworks console réelles du plugin (plugin/assets/consoles/*.png)
-// sous /console-art/, pour ne jamais avoir à les dupliquer dans preview/.
+// Serves the plugin's real console artwork (assets/consoles/*.png) under
+// /console-art/, so it never needs copying into preview/.
 function serveConsoleArt() {
-  const artDir = path.resolve(__dirname, "../plugin/assets/consoles");
+  const artDir = path.resolve(__dirname, "../assets/consoles");
   return {
     name: "serve-console-art",
     configureServer(server: any) {
@@ -16,9 +16,7 @@ function serveConsoleArt() {
         const full = path.join(artDir, file);
         if (!full.startsWith(artDir) || !fs.existsSync(full)) return next();
         res.setHeader("Content-Type", "image/png");
-        // Ces PNG sont régénérés sur place (même nom de fichier) à chaque
-        // passage de build_assets.py -- sans ça, le navigateur garde en
-        // cache une ancienne version et on croit revoir un bug déjà corrigé.
+        // build_assets.py regenerates these in place under the same names.
         res.setHeader("Cache-Control", "no-store");
         fs.createReadStream(full).pipe(res);
       });
@@ -27,14 +25,9 @@ function serveConsoleArt() {
 }
 
 export default defineConfig({
-  // Linaria (@linaria/core, @linaria/react) délègue son intégration bundler
-  // au projet wyw-in-js depuis la v6/7 -- @linaria/vite est resté sur
-  // l'ancienne v5 et ne sait pas transformer ce que produisent nos imports
-  // @linaria/core actuels. wyw() avant react() : il doit extraire les
-  // `css`/`styled` en vraies feuilles de style avant que le plugin React ne
-  // transforme le JSX.
+  // Linaria's bundler integration lives in wyw-in-js since v6 (@linaria/vite
+  // is stuck on v5). wyw() must run before react() so styles are extracted
+  // before JSX is transformed.
   plugins: [wyw(), react(), serveConsoleArt()],
-  // Port fixe et dédié (ni le défaut Vite 5173, ni 8888) pour ne jamais
-  // entrer en conflit avec un autre outil déjà lancé (tunnel CDP, etc.).
   server: { port: 5183, strictPort: true },
 });

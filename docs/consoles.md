@@ -1,7 +1,7 @@
 # Console artwork and colors
 
 Every console Colorful ships artwork for, with the color used for its tab
-strip and panel. Generated from `plugin/assets/console-map.json` -- see
+strip and panel. Generated from `assets/console-map.json` -- see
 [DEVELOPMENT.md](DEVELOPMENT.md#building-the-artwork) for how that file is built.
 
 A TabMaster tab auto-matches here by title (see the main README's

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Deploy the plugin to the Steam Deck.
+# Deploy the plugin to the Steam Deck from a checkout.
 #
-#   ./install.sh [user@host]
+#   DECK=deck@<ip> SSH_KEY=~/.ssh/<key> ./install.sh
 #
 # ~/homebrew/plugins is root-owned (the loader runs as root), so the files go
 # through a staging folder in the deck user's home and are moved into place with
@@ -9,23 +9,29 @@
 # Big Picture is up again.
 set -euo pipefail
 
-DECK="${1:-deck@192.168.1.153}"
-KEY="${SSH_KEY:-$HOME/.ssh/cedric}"
-NAME="Colorful"
+DECK="${DECK:?set DECK to the Deck's ssh address, e.g. DECK=deck@192.168.1.10}"
+KEY="${SSH_KEY:-$HOME/.ssh/id_ed25519}"
+NAME="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["name"])' "$(dirname "$0")/plugin.json")"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 SSH=(ssh -i "$KEY" -o ConnectTimeout=10 "$DECK")
 
-if [ ! -f "$HERE/plugin/dist/index.js" ]; then
-  echo "dist/index.js missing -- run: cd plugin && npm install && npm run build" >&2
+if [ ! -f "$HERE/dist/index.js" ]; then
+  echo "dist/index.js missing -- run: npm install && npm run build" >&2
   exit 1
 fi
 
+# Only what Decky reads at runtime: package.json is needed (its "type": "module"
+# picks the ES module loader), the rest of the tooling is not.
 echo "==> copying to $DECK"
-rsync -az --delete \
+rsync -az --delete --delete-excluded \
   -e "ssh -i $KEY -o ConnectTimeout=10" \
-  --exclude node_modules --exclude src --exclude tools --exclude __pycache__ \
-  --exclude '.*' --exclude package-lock.json --exclude rollup.config.js --exclude tsconfig.json \
-  "$HERE/plugin/" "$DECK:~/decky-colorful/"
+  --include dist/ --include 'dist/**' \
+  --include assets/ --include 'assets/**' \
+  --include py_modules/ --include 'py_modules/*.py' \
+  --include main.py --include plugin.json --include package.json \
+  --include LICENSE --include README.md \
+  --exclude '*' \
+  "$HERE/" "$DECK:~/decky-colorful/"
 
 echo "==> installing"
 "${SSH[@]}" "sudo -n true 2>/dev/null || { echo 'passwordless sudo unavailable -- run the install block by hand on the Deck' >&2; exit 2; }

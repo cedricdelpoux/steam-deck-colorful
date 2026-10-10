@@ -22,7 +22,7 @@ export interface FixtureTab {
   id: string;
   title: string;
   position: number;
-  artwork: string; // file in plugin/assets/consoles, or "" for no panel
+  artwork: string; // file in assets/consoles, or "" for no panel
   color: string | null;
   collections: string[];
   vendor?: string;

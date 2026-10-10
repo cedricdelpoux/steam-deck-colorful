@@ -1,14 +1,14 @@
-// TS port of plugin/py_modules/css.py, so the design can be iterated on in
+// TS port of py_modules/css.py, so the design can be iterated on in
 // JS/CSS with instant reload instead of redeploying to the Deck for every
 // change. The static part (selectors, comments, rule order) is no longer
-// hand-duplicated here: it lives in plugin/assets/panel-structure.css,
+// hand-duplicated here: it lives in assets/panel-structure.css,
 // loaded raw (like panel.js) and filled with the same {{...}} tokens as the
 // Python side -- a file that drifted once (a stray "*/" in a comment broke
 // custom property resolution in production without this differently-worded
 // TS version ever reproducing it). Only the per-tab rules (colors, tab
 // count) are still generated separately on each side, since they come from
 // different data sources (TabMaster vs. this fixture).
-import structureTemplate from "../../plugin/assets/panel-structure.css?raw";
+import structureTemplate from "../../assets/panel-structure.css?raw";
 import { LIB_ROOT, CONTAINER, TAB, TAB_ROW, TOP_BAR, GRID, COUNT, GROUP_HEADER, GROUP_DIVIDER, FIRST_TAB_INDEX } from "./steamSelectors";
 import type { FixtureTab } from "./fixtures/data";
 

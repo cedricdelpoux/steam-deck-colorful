@@ -1,5 +1,5 @@
 /* Shared CSS template for the console panel -- loaded raw by BOTH
-   plugin/py_modules/css.py (real Deck injection) and preview/src/buildPanelCss.ts
+   py_modules/css.py (real Deck injection) and preview/src/buildPanelCss.ts
    (the Vite preview harness), each filling in the double-curly-brace
    placeholders below with its own values, so editing it here changes both.
    The per-tab rules (colors, tab count) are still generated separately by
