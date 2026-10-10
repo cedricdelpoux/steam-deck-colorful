@@ -1,0 +1,824 @@
+{
+ "3DO Interactive Multiplayer": {
+  "color": "#d0a73f",
+  "file": "3DO Interactive Multiplayer.png",
+  "height": 615,
+  "width": 800
+ },
+ "Amstrad CPC": {
+  "color": "#5152f9",
+  "file": "Amstrad CPC.png",
+  "height": 565,
+  "width": 800
+ },
+ "Amstrad GX4000": {
+  "color": "#485c82",
+  "file": "Amstrad GX4000.png",
+  "height": 502,
+  "width": 800
+ },
+ "Android": {
+  "color": "#2ec781",
+  "file": "Android.png",
+  "height": 615,
+  "width": 800
+ },
+ "Apple II": {
+  "color": "#387869",
+  "file": "Apple II.png",
+  "height": 615,
+  "width": 800
+ },
+ "Apple Macintosh": {
+  "color": "#55edfc",
+  "file": "Apple Macintosh.png",
+  "height": 521,
+  "width": 800
+ },
+ "Apple iOS": {
+  "color": "#f9740e",
+  "file": "Apple iOS.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade": {
+  "color": "#5d60b9",
+  "file": "Arcade.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Atari Classics": {
+  "color": "#7e4b37",
+  "file": "Arcade Atari Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Capcom Classics": {
+  "color": "#0d5db5",
+  "file": "Arcade Capcom Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Capcom Play System": {
+  "color": "#0e6ac2",
+  "file": "Arcade Capcom Play System.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Capcom Play System II": {
+  "color": "#0e69c1",
+  "file": "Arcade Capcom Play System II.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Capcom Play System III": {
+  "color": "#0e6ac1",
+  "file": "Arcade Capcom Play System III.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Cave": {
+  "color": "#26b974",
+  "file": "Arcade Cave.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Data East Classics": {
+  "color": "#40517b",
+  "file": "Arcade Data East Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Irem Classics": {
+  "color": "#7e573f",
+  "file": "Arcade Irem Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Konami Classics": {
+  "color": "#3e5180",
+  "file": "Arcade Konami Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Midway Classics": {
+  "color": "#c13643",
+  "file": "Arcade Midway Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Namco Classics": {
+  "color": "#b9ad39",
+  "file": "Arcade Namco Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Nintendo Classics": {
+  "color": "#31a3af",
+  "file": "Arcade Nintendo Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade SNK Classics": {
+  "color": "#e52d2d",
+  "file": "Arcade SNK Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Taito Classics": {
+  "color": "#2886c8",
+  "file": "Arcade Taito Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Arcade Williams Classics": {
+  "color": "#7f3c3b",
+  "file": "Arcade Williams Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Atari 2600": {
+  "color": "#b92e35",
+  "file": "Atari 2600.png",
+  "height": 530,
+  "width": 800
+ },
+ "Atari 5200": {
+  "color": "#40599c",
+  "file": "Atari 5200.png",
+  "height": 475,
+  "width": 800
+ },
+ "Atari 7800": {
+  "color": "#2f7bc7",
+  "file": "Atari 7800.png",
+  "height": 536,
+  "width": 800
+ },
+ "Atari Jaguar": {
+  "color": "#cf3d3e",
+  "file": "Atari Jaguar.png",
+  "height": 552,
+  "width": 800
+ },
+ "Atari Lynx": {
+  "color": "#e49838",
+  "file": "Atari Lynx.png",
+  "height": 397,
+  "width": 800
+ },
+ "Atari ST": {
+  "color": "#33d342",
+  "file": "Atari ST.png",
+  "height": 437,
+  "width": 800
+ },
+ "Bally Astrocade": {
+  "color": "#ddec32",
+  "file": "Bally Astrocade.png",
+  "height": 490,
+  "width": 800
+ },
+ "Casio Loopy": {
+  "color": "#0714f7",
+  "file": "Casio Loopy.png",
+  "height": 584,
+  "width": 800
+ },
+ "Category Arcade": {
+  "color": "#5d60b9",
+  "file": "Category Arcade.png",
+  "height": 615,
+  "width": 800
+ },
+ "Category Computers": {
+  "color": "#833a24",
+  "file": "Category Computers.png",
+  "height": 359,
+  "width": 800
+ },
+ "Category Consoles": {
+  "color": "#384a81",
+  "file": "Category Consoles.png",
+  "height": 539,
+  "width": 800
+ },
+ "Category Favorite": {
+  "color": "#fb947e",
+  "file": "Category Favorite.png",
+  "height": 551,
+  "width": 800
+ },
+ "Category Handhelds": {
+  "color": "#c53443",
+  "file": "Category Handhelds.png",
+  "height": 436,
+  "width": 800
+ },
+ "Category Pinball": {
+  "color": "#bcb226",
+  "file": "Category Pinball.png",
+  "height": 615,
+  "width": 800
+ },
+ "Category Playlist": {
+  "color": "#71d3ec",
+  "file": "Category Playlist.png",
+  "height": 551,
+  "width": 800
+ },
+ "ColecoVision": {
+  "color": "#de5b3f",
+  "file": "ColecoVision.png",
+  "height": 455,
+  "width": 800
+ },
+ "Commodore 64": {
+  "color": "#0959b2",
+  "file": "Commodore 64.png",
+  "height": 615,
+  "width": 800
+ },
+ "Commodore Amiga": {
+  "color": "#3870c5",
+  "file": "Commodore Amiga.png",
+  "height": 526,
+  "width": 800
+ },
+ "Commodore Amiga CD32": {
+  "color": "#458a41",
+  "file": "Commodore Amiga CD32.png",
+  "height": 616,
+  "width": 800
+ },
+ "Commodore CDTV": {
+  "color": "#a06fbc",
+  "file": "Commodore CDTV.png",
+  "height": 604,
+  "width": 800
+ },
+ "Daphne": {
+  "color": "#f78528",
+  "file": "Daphne.png",
+  "height": 615,
+  "width": 800
+ },
+ "Epoch Super Cassette Vision": {
+  "color": "#802c26",
+  "file": "Epoch Super Cassette Vision.png",
+  "height": 469,
+  "width": 800
+ },
+ "Fairchild Channel F": {
+  "color": "#65c66d",
+  "file": "Fairchild Channel F.png",
+  "height": 478,
+  "width": 800
+ },
+ "Fujitsu FM Towns Marty": {
+  "color": "#2a2945",
+  "file": "Fujitsu FM Towns Marty.png",
+  "height": 583,
+  "width": 800
+ },
+ "GCE Vectrex": {
+  "color": "#4f97d9",
+  "file": "GCE Vectrex.png",
+  "height": 614,
+  "width": 800
+ },
+ "Game and Watch": {
+  "color": "#8ea5ae",
+  "file": "Game and Watch.png",
+  "height": 538,
+  "width": 800
+ },
+ "MS-DOS": {
+  "color": "#2d62c1",
+  "file": "MS-DOS.png",
+  "height": 580,
+  "width": 800
+ },
+ "Magnavox Odyssey 2": {
+  "color": "#f08211",
+  "file": "Magnavox Odyssey 2.png",
+  "height": 531,
+  "width": 800
+ },
+ "Mattel Intellivision": {
+  "color": "#f28311",
+  "file": "Mattel Intellivision.png",
+  "height": 463,
+  "width": 800
+ },
+ "Microsoft MSX": {
+  "color": "#32a8ec",
+  "file": "Microsoft MSX.png",
+  "height": 615,
+  "width": 800
+ },
+ "Microsoft MSX LaserDisc": {
+  "color": "#32a8ec",
+  "file": "Microsoft MSX LaserDisc.png",
+  "height": 615,
+  "width": 800
+ },
+ "Microsoft MSX2": {
+  "color": "#32a8ec",
+  "file": "Microsoft MSX2.png",
+  "height": 615,
+  "width": 800
+ },
+ "Microsoft MSX2+": {
+  "color": "#32a8ec",
+  "file": "Microsoft MSX2+.png",
+  "height": 615,
+  "width": 800
+ },
+ "Microsoft Xbox": {
+  "color": "#6bbb3d",
+  "file": "Microsoft Xbox.png",
+  "height": 545,
+  "width": 800
+ },
+ "Microsoft Xbox 360": {
+  "color": "#81b759",
+  "file": "Microsoft Xbox 360.png",
+  "height": 598,
+  "width": 800
+ },
+ "Microsoft Xbox One": {
+  "color": "#047523",
+  "file": "Microsoft Xbox One.png",
+  "height": 572,
+  "width": 800
+ },
+ "NEC PC Engine": {
+  "color": "#bd3e43",
+  "file": "NEC PC Engine.png",
+  "height": 615,
+  "width": 800
+ },
+ "NEC PC Engine CD": {
+  "color": "#598dca",
+  "file": "NEC PC Engine CD.png",
+  "height": 615,
+  "width": 800
+ },
+ "NEC PC-FX": {
+  "color": "#6c9fe7",
+  "file": "NEC PC-FX.png",
+  "height": 615,
+  "width": 800
+ },
+ "NEC TurboGrafx-16": {
+  "color": "#f3994d",
+  "file": "NEC TurboGrafx-16.png",
+  "height": 616,
+  "width": 800
+ },
+ "NEC TurboGrafx-CD": {
+  "color": "#bc875d",
+  "file": "NEC TurboGrafx-CD.png",
+  "height": 615,
+  "width": 800
+ },
+ "Namco System 22": {
+  "color": "#c93837",
+  "file": "Namco System 22.png",
+  "height": 615,
+  "width": 800
+ },
+ "Nintendo 3DS": {
+  "color": "#697583",
+  "file": "Nintendo 3DS.png",
+  "height": 616,
+  "width": 800
+ },
+ "Nintendo 64": {
+  "color": "#1bb861",
+  "file": "Nintendo 64.png",
+  "height": 563,
+  "width": 800
+ },
+ "Nintendo 64 DD": {
+  "color": "#3ebb59",
+  "file": "Nintendo 64 DD.png",
+  "height": 511,
+  "width": 800
+ },
+ "Nintendo DS": {
+  "color": "#b6c9d6",
+  "file": "Nintendo DS.png",
+  "height": 615,
+  "width": 800
+ },
+ "Nintendo Entertainment System": {
+  "color": "#ba3141",
+  "file": "Nintendo Entertainment System.png",
+  "height": 467,
+  "width": 800
+ },
+ "Nintendo Famicom": {
+  "color": "#ba3141",
+  "file": "Nintendo Famicom.png",
+  "height": 396,
+  "width": 800
+ },
+ "Nintendo Famicom Disk System": {
+  "color": "#191a49",
+  "file": "Nintendo Famicom Disk System.png",
+  "height": 448,
+  "width": 800
+ },
+ "Nintendo Game Boy": {
+  "color": "#414f8b",
+  "file": "Nintendo Game Boy.png",
+  "height": 615,
+  "width": 800
+ },
+ "Nintendo Game Boy Advance": {
+  "color": "#4e73d7",
+  "file": "Nintendo Game Boy Advance.png",
+  "height": 489,
+  "width": 800
+ },
+ "Nintendo Game Boy Color": {
+  "color": "#f5b72c",
+  "file": "Nintendo Game Boy Color.png",
+  "height": 615,
+  "width": 800
+ },
+ "Nintendo GameCube": {
+  "color": "#9682f0",
+  "file": "Nintendo GameCube.png",
+  "height": 550,
+  "width": 800
+ },
+ "Nintendo SNES": {
+  "color": "#d64042",
+  "file": "Nintendo SNES.png",
+  "height": 441,
+  "width": 800
+ },
+ "Nintendo Satellaview": {
+  "color": "#ca746f",
+  "file": "Nintendo Satellaview.png",
+  "height": 525,
+  "width": 800
+ },
+ "Nintendo Super Famicom": {
+  "color": "#d64042",
+  "file": "Nintendo Super Famicom.png",
+  "height": 441,
+  "width": 800
+ },
+ "Nintendo Super Game Boy": {
+  "color": "#414f8b",
+  "file": "Nintendo Super Game Boy.png",
+  "height": 470,
+  "width": 800
+ },
+ "Nintendo Switch": {
+  "color": "#fb584f",
+  "file": "Nintendo Switch.png",
+  "height": 486,
+  "width": 800
+ },
+ "Nintendo Virtual Boy": {
+  "color": "#e3414c",
+  "file": "Nintendo Virtual Boy.png",
+  "height": 615,
+  "width": 800
+ },
+ "Nintendo Wii": {
+  "color": "#81cceb",
+  "file": "Nintendo Wii.png",
+  "height": 580,
+  "width": 800
+ },
+ "Nintendo Wii U": {
+  "color": "#f4f67a",
+  "file": "Nintendo Wii U.png",
+  "height": 567,
+  "width": 800
+ },
+ "Nintendo WiiWare": {
+  "color": "#5a9fb9",
+  "file": "Nintendo WiiWare.png",
+  "height": 580,
+  "width": 800
+ },
+ "PC Engine SuperGrafx": {
+  "color": "#69b5dc",
+  "file": "PC Engine SuperGrafx.png",
+  "height": 615,
+  "width": 800
+ },
+ "Philips CD-i": {
+  "color": "#c171a4",
+  "file": "Philips CD-i.png",
+  "height": 566,
+  "width": 800
+ },
+ "SNK Neo Geo AES": {
+  "color": "#7c828c",
+  "file": "SNK Neo Geo AES.png",
+  "height": 546,
+  "width": 800
+ },
+ "SNK Neo Geo CD": {
+  "color": "#af98e6",
+  "file": "SNK Neo Geo CD.png",
+  "height": 560,
+  "width": 800
+ },
+ "SNK Neo Geo MVS": {
+  "color": "#d64444",
+  "file": "SNK Neo Geo MVS.png",
+  "height": 615,
+  "width": 800
+ },
+ "SNK Neo geo Pocket": {
+  "color": "#ed9f46",
+  "file": "SNK Neo geo Pocket.png",
+  "height": 499,
+  "width": 800
+ },
+ "SNK Neo geo Pocket Color": {
+  "color": "#ed9f46",
+  "file": "SNK Neo geo Pocket Color.png",
+  "height": 511,
+  "width": 800
+ },
+ "Sammy Atomiswave": {
+  "color": "#30ae6e",
+  "file": "Sammy Atomiswave.png",
+  "height": 615,
+  "width": 800
+ },
+ "ScummVM": {
+  "color": "#f09514",
+  "file": "ScummVM.png",
+  "height": 570,
+  "width": 800
+ },
+ "Sega 32X": {
+  "color": "#0e7acd",
+  "file": "Sega 32X.png",
+  "height": 590,
+  "width": 800
+ },
+ "Sega CD": {
+  "color": "#0e7acd",
+  "file": "Sega CD.png",
+  "height": 563,
+  "width": 800
+ },
+ "Sega CD 32X": {
+  "color": "#7b5640",
+  "file": "Sega CD 32X.png",
+  "height": 563,
+  "width": 800
+ },
+ "Sega Chihiro": {
+  "color": "#347fc5",
+  "file": "Sega Chihiro.png",
+  "height": 616,
+  "width": 800
+ },
+ "Sega Classics": {
+  "color": "#2b7bbc",
+  "file": "Sega Classics.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Dreamcast": {
+  "color": "#4d7dd7",
+  "file": "Sega Dreamcast.png",
+  "height": 560,
+  "width": 800
+ },
+ "Sega Game Gear": {
+  "color": "#366fb1",
+  "file": "Sega Game Gear.png",
+  "height": 437,
+  "width": 800
+ },
+ "Sega Genesis": {
+  "color": "#c23b2c",
+  "file": "Sega Genesis.png",
+  "height": 503,
+  "width": 800
+ },
+ "Sega Hikaru": {
+  "color": "#151457",
+  "file": "Sega Hikaru.png",
+  "height": 616,
+  "width": 800
+ },
+ "Sega Lindbergh": {
+  "color": "#fbe16b",
+  "file": "Sega Lindbergh.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Master System": {
+  "color": "#c2403e",
+  "file": "Sega Master System.png",
+  "height": 444,
+  "width": 800
+ },
+ "Sega MegaDrive": {
+  "color": "#0e7acd",
+  "file": "Sega MegaDrive.png",
+  "height": 505,
+  "width": 800
+ },
+ "Sega MegaDrive (JAP)": {
+  "color": "#0e7acd",
+  "file": "Sega MegaDrive (JAP).png",
+  "height": 515,
+  "width": 800
+ },
+ "Sega Model 1": {
+  "color": "#2878b9",
+  "file": "Sega Model 1.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Model 2": {
+  "color": "#68a0c7",
+  "file": "Sega Model 2.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Model 3": {
+  "color": "#1e1f68",
+  "file": "Sega Model 3.png",
+  "height": 616,
+  "width": 800
+ },
+ "Sega Naomi": {
+  "color": "#ef8310",
+  "file": "Sega Naomi.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Naomi 2": {
+  "color": "#c30f0f",
+  "file": "Sega Naomi 2.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Pico": {
+  "color": "#6054ae",
+  "file": "Sega Pico.png",
+  "height": 525,
+  "width": 800
+ },
+ "Sega SG-1000": {
+  "color": "#0c8427",
+  "file": "Sega SG-1000.png",
+  "height": 503,
+  "width": 800
+ },
+ "Sega ST-V": {
+  "color": "#c0b85f",
+  "file": "Sega ST-V.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega Saturn": {
+  "color": "#5b7ada",
+  "file": "Sega Saturn.png",
+  "height": 499,
+  "width": 800
+ },
+ "Sega Saturn (JAP)": {
+  "color": "#5b7ada",
+  "file": "Sega Saturn (JAP).png",
+  "height": 615,
+  "width": 800
+ },
+ "Sega System 32": {
+  "color": "#2b7cbc",
+  "file": "Sega System 32.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sharp X1": {
+  "color": "#ba363a",
+  "file": "Sharp X1.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sinclair ZX Spectrum": {
+  "color": "#9a2611",
+  "file": "Sinclair ZX Spectrum.png",
+  "height": 452,
+  "width": 800
+ },
+ "Sony PS Vita": {
+  "color": "#0162c2",
+  "file": "Sony PS Vita.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sony PSP": {
+  "color": "#376da9",
+  "file": "Sony PSP.png",
+  "height": 370,
+  "width": 800
+ },
+ "Sony PSP Minis": {
+  "color": "#5582b9",
+  "file": "Sony PSP Minis.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sony Playstation": {
+  "color": "#878c92",
+  "file": "Sony Playstation.png",
+  "height": 562,
+  "width": 800
+ },
+ "Sony Playstation 2": {
+  "color": "#3069c0",
+  "file": "Sony Playstation 2.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sony Playstation 3": {
+  "color": "#663a71",
+  "file": "Sony Playstation 3.png",
+  "height": 615,
+  "width": 800
+ },
+ "Sony Pocketstation": {
+  "color": "#194492",
+  "file": "Sony Pocketstation.png",
+  "height": 615,
+  "width": 800
+ },
+ "Steam": {
+  "color": "#33363b",
+  "file": "Steam.png",
+  "height": 338,
+  "width": 387
+ },
+ "Super Nintendo Entertainment System": {
+  "color": "#d64042",
+  "file": "Super Nintendo Entertainment System.png",
+  "height": 441,
+  "width": 800
+ },
+ "Super Nintendo Entertainment System MSU-1": {
+  "color": "#392174",
+  "file": "Super Nintendo Entertainment System MSU-1.png",
+  "height": 556,
+  "width": 800
+ },
+ "Taito Type X": {
+  "color": "#3e9bd5",
+  "file": "Taito Type X.png",
+  "height": 615,
+  "width": 800
+ },
+ "Taito Type X2": {
+  "color": "#3c97cf",
+  "file": "Taito Type X2.png",
+  "height": 615,
+  "width": 800
+ },
+ "Windows": {
+  "color": "#0a4191",
+  "file": "Windows.png",
+  "height": 518,
+  "width": 800
+ },
+ "Windows 3.1": {
+  "color": "#4f9ab4",
+  "file": "Windows 3.1.png",
+  "height": 553,
+  "width": 800
+ },
+ "WonderSwan": {
+  "color": "#77cbbd",
+  "file": "WonderSwan.png",
+  "height": 493,
+  "width": 800
+ },
+ "WonderSwan Color": {
+  "color": "#42b1e6",
+  "file": "WonderSwan Color.png",
+  "height": 468,
+  "width": 800
+ },
+ "neoGeo": {
+  "color": "#7c828c",
+  "file": "neoGeo.png",
+  "height": 546,
+  "width": 800
+ }
+}

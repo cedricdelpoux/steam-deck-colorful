@@ -1,0 +1,146 @@
+/* Shared CSS template for the console panel -- loaded raw by BOTH
+   plugin/py_modules/css.py (real Deck injection) and preview/src/buildPanelCss.ts
+   (the Vite preview harness), each filling in the double-curly-brace
+   placeholders below with its own values, so editing it here changes both.
+   The per-tab rules (colors, tab count) are still generated separately by
+   each side, since those come from different data sources (TabMaster vs.
+   the fixture); only this static structure -- selectors, comments, rule
+   order -- lives in one place. */
+
+/* Registering the color makes it interpolable, so the gradients that use it
+   (tab strip, corner) animate in step with the panel instead of snapping. */
+@property --cp-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: transparent;
+}
+
+/* No panel by default: the library keeps its normal layout. --cp-info-top is
+   read by panel.js so the info box lines up with the artwork positioning
+   below instead of carrying its own separate, driftable copy of the number.
+   --cp-art-bottom/--cp-art-height position and size panel.js's artwork <img>
+   the same way; --cp-tint/--cp-ink/--cp-ink-dim/--cp-track/--cp-shadow are the veil and
+   matching text colors shared by the grid tint below and the info box. */
+{{root}} {
+    --cp-width: 0%;
+    --cp-info-top: {{info_top}}%;
+    --cp-art-bottom: {{art_bottom_offset}}px;
+    --cp-art-height: {{target_image_height}}px;
+    --cp-tint: {{tint}};
+    --cp-ink: {{ink}};
+    --cp-ink-dim: {{ink_dim}};
+    --cp-track: {{track}};
+    --cp-shadow: {{shadow}};
+    transition: --cp-color 0.3s ease-in-out;
+}
+
+/* The panel's own color only -- the artwork itself is a real <img> that
+   panel.js manages (see ensureArt()), not a CSS background. A ::before can
+   only carry ONE image sized by a single background-size shared by every
+   tab (whichever tab's artwork was narrowest-relative-to-height dictated
+   that shared size for all of them, including itself -- a real <img> sized
+   independently at a fixed height sidesteps that, and is inspectable like
+   any other element). */
+{{root}} {{container}}::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: {{top_offset}}px;
+    bottom: 0;
+    width: var(--cp-width);
+    background-color: var(--cp-color, transparent);
+    border-radius: 0;
+    z-index: 2;
+    pointer-events: none;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Concave corner where the panel meets the tab strip, so the color reads
+   as one shape flowing out of the bar instead of a stacked rectangle. */
+{{root}} {{container}}::after {
+    content: "";
+    position: absolute;
+    top: {{top_offset}}px;
+    left: var(--cp-width);
+    width: var(--cp-fillet, 22px);
+    height: var(--cp-fillet, 22px);
+    background: radial-gradient(circle at 100% 100%,
+        rgba(0, 0, 0, 0) 0 calc(var(--cp-fillet, 22px) - 0.5px),
+        var(--cp-color, transparent) var(--cp-fillet, 22px));
+    z-index: 2;
+    pointer-events: none;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Steam paints a 50% black scrim over the whole bar as a ::before with
+   z-index -1, which lands on top of the bar's own background. Extended down
+   to the tab row (not just the search row) so it also fills in behind the
+   colored strip's rounded top corners below -- those corners cut into the
+   strip's rectangle, and without this the cut-away triangle exposed Steam's
+   own unstyled bar color instead of matching the search row it sits next to. */
+{{root}} {{topbar}}::before {
+    background: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.5) 0 98px,
+        rgba(0, 0, 0, 0) 98px) !important;
+    box-shadow: none !important;
+}
+
+/* The colored strip is its own shape covering just the tab row, so its
+   corners are actually visible. Only the top ones are rounded: the bottom
+   edge sits flush on the console panel and the grid. */
+{{root}} {{topbar}}::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    height: 58px;
+    background: var(--cp-color, transparent);
+    border-radius: 18px 18px 0 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* The active tab carries no fill, so it melts into the colored strip, which
+   in turn flows down into the panel. The inactive ones recede as dark pills. */
+{{root}} {{tabrow}} {{tab}}[aria-selected="true"] {
+    background-color: var(--cp-tab-active-bg, rgba(255, 255, 255, 0.15));
+}
+
+{{root}} {{tabrow}} {{tab}}[aria-selected="false"] {
+    background-color: var(--cp-tab-idle-bg, transparent);
+}
+
+{{root}} {{tabrow}} {{tab}} {
+    transition: background-color 0.3s ease-in-out;
+    /* Steam dims unselected tabs' own text by default -- fine against its
+       usual dark bar, but on top of a light console color (the Wii veil,
+       in particular) that dimmed grey nearly disappeared. Force the same
+       white every other piece of text on the panel already gets, rather
+       than only the active tab reading clearly. */
+    color: var(--cp-ink, #ffffff);
+    /* Every other piece of text on the panel (info box, count badge) gets
+       this same shadow for legibility over the artwork/color -- the tab
+       label itself was the one thing still left plain. */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* The game count gets its own badge -- the same light, low-opacity look as
+   the info box -- using --cp-ink/--cp-track rather than hardcoded colors, so
+   it stays legible on every console. Applied to every tab alike, so there is
+   nothing to visibly snap between when the active one changes. */
+{{root}} {{tabrow}} {{tab}} {{count}} {
+    color: var(--cp-ink, #ffffff);
+    background: var(--cp-track, rgba(255, 255, 255, 0.14));
+    text-shadow: var(--cp-shadow, 0 1px 2px rgba(0, 0, 0, 0.35));
+    border-radius: 8px;
+    padding: 1px 7px;
+    opacity: 1;
+    /* The badge box itself measures dead center in the tab already --
+       line-height:normal is what throws the glyph off within it (font
+       ascent/descent aren't symmetric). Centering as flex content sidesteps
+       that instead of guessing at a line-height number. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

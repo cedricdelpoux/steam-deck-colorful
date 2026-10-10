@@ -1,0 +1,12 @@
+/* Global resets only; component styles live alongside each component. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0e141b;
+  color: #e6f0fa;
+  font-family: "Motiva Sans", "Segoe UI", system-ui, sans-serif;
+}

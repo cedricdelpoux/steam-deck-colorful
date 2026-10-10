@@ -1,0 +1,11 @@
+{
+  "name": "Colorful",
+  "author": "delpoux",
+  "flags": [],
+  "api_version": 2,
+  "publish": {
+    "tags": ["library", "theme", "emulation"],
+    "description": "Shows a console panel with artwork and per-game info (playtime, saves, RetroAchievements, Steam achievements) next to the library grid, one look per TabMaster console tab.",
+    "image": ""
+  }
+}

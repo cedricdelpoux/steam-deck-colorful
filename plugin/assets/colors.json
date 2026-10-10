@@ -1,0 +1,568 @@
+{
+ "aliases": {
+  "2600": "atari2600",
+  "32x": "sega32x",
+  "3do interactive multiplayer": "3do",
+  "5200": "atari5200",
+  "5200 supersystem": "atari5200",
+  "7800": "atari7800",
+  "7800 prosystem": "atari7800",
+  "aes": "neogeo",
+  "androidapps": "android",
+  "androidemulators": "android",
+  "androidgames": "android",
+  "atari": "atari2600",
+  "atari 2600": "atari2600",
+  "atari 5200": "atari5200",
+  "atari 5200 supersystem": "atari5200",
+  "atari 7800": "atari7800",
+  "atari jaguar": "atarijaguar",
+  "atari lynx": "atarilynx",
+  "atari prosystem": "atari7800",
+  "atari supersystem": "atari5200",
+  "atari7800 prosystem": "atari7800",
+  "capcom cps1": "cps1",
+  "capcom cps2": "cps2",
+  "capcom cps3": "cps3",
+  "cd-i": "cdi",
+  "coleco": "colecovision",
+  "coleco vision": "colecovision",
+  "commodore 64": "c64",
+  "commodore amiga": "amiga",
+  "compact disc interactive": "cdi",
+  "dc": "dreamcast",
+  "droid": "android",
+  "ds": "nds",
+  "dsi": "nds",
+  "famicom": "nes",
+  "famicom disk system": "fds",
+  "fba": "arcade",
+  "fbn": "arcade",
+  "fbneo": "arcade",
+  "fc": "nes",
+  "final burn alpha": "arcade",
+  "final burn neo": "arcade",
+  "game boy": "gb",
+  "game boy advance": "gba",
+  "game boy color": "gbc",
+  "game cube": "gamecube",
+  "game gear": "gamegear",
+  "gameandwatch": "gw",
+  "gameboy": "gb",
+  "gameboy advance": "gba",
+  "gameboy color": "gbc",
+  "gameboyadvance": "gba",
+  "gameboycolor": "gbc",
+  "gamewatch": "gw",
+  "gc": "gamecube",
+  "gce vectrex": "vectrex",
+  "gcn": "gamecube",
+  "genesis/mega drive": "genesis",
+  "jaguar": "atarijaguar",
+  "lynx": "atarilynx",
+  "magnavox odyssey 2": "odyssey2",
+  "mame": "arcade",
+  "master system": "mastersystem",
+  "mattel intellivision": "intellivision",
+  "md": "megadrive",
+  "mega drive": "megadrive",
+  "mega32x": "sega32x",
+  "megacd": "segacd",
+  "microsoft dos": "dos",
+  "microsoft ms-dos": "dos",
+  "microsoft msx": "msx",
+  "microsoft msx2": "msx",
+  "ms-dos": "dos",
+  "msdos": "dos",
+  "msx 2": "msx",
+  "msx 2+": "msx",
+  "msx laserdisc": "msx",
+  "msx2": "msx",
+  "msx2+": "msx",
+  "ndsi": "nds",
+  "nec pc engine": "pcengine",
+  "nec pc engine cd": "pcecd",
+  "nec supergrafx": "supergrafx",
+  "nec turbografx-16": "tg16",
+  "neo geo": "neogeo",
+  "neo geo advanced entertainment system": "neogeo",
+  "neo geo aes": "neogeo",
+  "neo geo cd": "neogeocd",
+  "neo geo mvs": "mvs",
+  "neo geo pocket": "ngp",
+  "neo geo pocket color": "ngpc",
+  "neo-geo cd": "neogeocd",
+  "neogeo advanced entertainment system": "neogeo",
+  "neogeo aes": "neogeo",
+  "neogeo cd": "neogeocd",
+  "neogeo color": "ngpc",
+  "neogeo pocket": "ngp",
+  "neogeo pocket color": "ngpc",
+  "neogeoaes": "neogeo",
+  "nes/famicom": "nes",
+  "ngb": "gb",
+  "ngc": "gamecube",
+  "ngcd": "neogeocd",
+  "nintendo": "nes",
+  "nintendo 3ds": "3ds",
+  "nintendo 64": "n64",
+  "nintendo ds": "nds",
+  "nintendo dsi": "nds",
+  "nintendo entertainment system": "nes",
+  "nintendo entertainment system (nes)": "nes",
+  "nintendo famicom disk system": "fds",
+  "nintendo game and watch": "gw",
+  "nintendo game boy": "gb",
+  "nintendo game boy advance": "gba",
+  "nintendo game boy color": "gbc",
+  "nintendo gameboy": "gb",
+  "nintendo gameboy advance": "gba",
+  "nintendo gameboy color": "gbc",
+  "nintendo gamecube": "gamecube",
+  "nintendo gb": "gb",
+  "nintendo gba": "gba",
+  "nintendo n64": "n64",
+  "nintendo nes": "nes",
+  "nintendo super game boy": "gb",
+  "nintendo super gameboy": "gb",
+  "nintendo wii": "wii",
+  "odyssey 2": "odyssey2",
+  "panasonic 3do": "3do",
+  "panasonic 3do interactive multiplayer": "3do",
+  "pc engine": "pcengine",
+  "pc engine cd": "pcecd",
+  "pc engine supergrafx": "supergrafx",
+  "pce": "pcengine",
+  "pcenginecd": "pcecd",
+  "philips": "cdi",
+  "philips cd-i": "cdi",
+  "philips cd-i (compact disc interactive)": "cdi",
+  "philips compact disc interactive": "cdi",
+  "pico-8": "pico8",
+  "play station": "psx",
+  "play station 2": "ps2",
+  "playstation": "psx",
+  "playstation 2": "ps2",
+  "playstation portable": "psp",
+  "playstation vita": "vita",
+  "prosystem": "atari7800",
+  "ps": "psx",
+  "ps vita": "vita",
+  "ps1": "psx",
+  "psvita": "vita",
+  "sammy atomiswave": "atomiswave",
+  "sega 32x": "sega32x",
+  "sega cd": "segacd",
+  "sega dreamcast": "dreamcast",
+  "sega game 1000": "sg1000",
+  "sega game gear": "gamegear",
+  "sega genesis": "genesis",
+  "sega master system": "mastersystem",
+  "sega mega drive": "megadrive",
+  "sega megadrive": "megadrive",
+  "sega naomi": "naomi",
+  "sega saturn": "saturn",
+  "sega sg-1000": "sg1000",
+  "sega sg1000": "sg1000",
+  "sfc": "snes",
+  "sg-1000": "sg1000",
+  "sinclair zx spectrum": "zxspectrum",
+  "sms": "mastersystem",
+  "snk neo geo aes": "neogeo",
+  "snk neo geo cd": "neogeocd",
+  "snk neo geo mvs": "mvs",
+  "snk neo geo pocket": "ngp",
+  "snk neo geo pocket color": "ngpc",
+  "snk neo-geo cd": "neogeocd",
+  "snk neo-geo mvs": "mvs",
+  "snk neo-geo pocket": "ngp",
+  "snk neo-geo pocket color": "ngpc",
+  "snk neogeo": "neogeo",
+  "snk neogeo aes": "neogeo",
+  "snk neogeo cd": "neogeocd",
+  "sony play station": "psx",
+  "sony play station 2": "ps2",
+  "sony playstation": "psx",
+  "sony playstation 2": "ps2",
+  "sony playstation portable": "psp",
+  "sony playstation vita": "vita",
+  "sony ps": "psx",
+  "sony ps vita": "vita",
+  "sony ps1": "psx",
+  "sony psp": "psp",
+  "sony psx": "psx",
+  "super famicom": "snes",
+  "super game boy": "gb",
+  "super gameboy": "gb",
+  "super nes": "snes",
+  "super nintendo": "snes",
+  "super nintendo entertainment system": "snes",
+  "superfamicom": "snes",
+  "superfc": "snes",
+  "supernes": "snes",
+  "supersystem": "atari5200",
+  "tg16cd": "tgcd",
+  "turbografx16": "tg16",
+  "turbografx16cd": "tgcd",
+  "vb": "vboy",
+  "virtualboy": "vboy",
+  "wonder swan": "wswan",
+  "wonderswan": "wswan",
+  "wonderswanc": "wswanc",
+  "wonderswancolor": "wswanc",
+  "x68k": "x68000"
+ },
+ "colors": {
+  "3do": "#d0a73f",
+  "3ds": "#697583",
+  "allgames": "#82cdea",
+  "amiga": "#3870c5",
+  "android": "#2ec781",
+  "arcade": "#5d60b9",
+  "atari2600": "#b92e35",
+  "atari5200": "#40599c",
+  "atari7800": "#2f7bc7",
+  "atarijaguar": "#cf3d3e",
+  "atarilynx": "#e49838",
+  "atomiswave": "#30ae6e",
+  "c64": "#0959b2",
+  "cdi": "#c171a4",
+  "colecovision": "#de5b3f",
+  "cps1": "#025836",
+  "cps2": "#049728",
+  "cps3": "#258ed1",
+  "default": "#194492",
+  "dos": "#2d62c1",
+  "dreamcast": "#4d7dd7",
+  "favorites": "#82cdea",
+  "fds": "#191a49",
+  "gamecube": "#9682f0",
+  "gamegear": "#366fb1",
+  "gb": "#414f8b",
+  "gba": "#4e73d7",
+  "gbc": "#f5b72c",
+  "genesis": "#c23b2c",
+  "gw": "#8ea5ae",
+  "intellivision": "#f28311",
+  "lastplayed": "#82cdea",
+  "mastersystem": "#c2403e",
+  "megadrive": "#0e7acd",
+  "msx": "#32a8ec",
+  "mvs": "#d64444",
+  "n64": "#1bb861",
+  "naomi": "#ef8310",
+  "nds": "#b6c9d6",
+  "neogeo": "#7c828c",
+  "neogeocd": "#af98e6",
+  "nes": "#ba3141",
+  "ngp": "#ed9f46",
+  "ngpc": "#ed9f46",
+  "odyssey2": "#f08211",
+  "pcecd": "#598dca",
+  "pcengine": "#bd3e43",
+  "pico8": "#1c542d",
+  "pokemini": "#405189",
+  "ports": "#1d334a",
+  "ps2": "#3069c0",
+  "psp": "#376da9",
+  "psx": "#878c92",
+  "recents": "#906226",
+  "saturn": "#5b7ada",
+  "scummvm": "#f09514",
+  "sega32x": "#0e7acd",
+  "segacd": "#0e7acd",
+  "sg1000": "#0c8427",
+  "snes": "#d64042",
+  "supergrafx": "#69b5dc",
+  "switch": "#fb584f",
+  "tg16": "#f3994d",
+  "tgcd": "#340f7a",
+  "vboy": "#e3414c",
+  "vectrex": "#4f97d9",
+  "vita": "#0162c2",
+  "wii": "#81cceb",
+  "wswan": "#77cbbd",
+  "wswanc": "#42b1e6",
+  "x68000": "#6b6d71",
+  "zxspectrum": "#9a2611"
+ },
+ "default": "#194492",
+ "meta": {
+  "3do": {
+   "vendor": "The 3DO Company",
+   "year": "1993"
+  },
+  "3ds": {
+   "vendor": "Nintendo",
+   "year": "2011"
+  },
+  "allgames": {
+   "vendor": "Various"
+  },
+  "amiga": {
+   "vendor": "Commodore",
+   "year": "1985"
+  },
+  "android": {
+   "vendor": "Google",
+   "year": "2008"
+  },
+  "arcade": {
+   "vendor": "Various",
+   "year": "1971"
+  },
+  "atari2600": {
+   "vendor": "Atari",
+   "year": "1977"
+  },
+  "atari5200": {
+   "vendor": "Atari",
+   "year": "1982"
+  },
+  "atari7800": {
+   "vendor": "Atari",
+   "year": "1986"
+  },
+  "atarijaguar": {
+   "vendor": "Atari",
+   "year": "1993"
+  },
+  "atarilynx": {
+   "vendor": "Atari",
+   "year": "1989"
+  },
+  "atomiswave": {
+   "vendor": "Sammy",
+   "year": "2003"
+  },
+  "c64": {
+   "vendor": "Commodore",
+   "year": "1982"
+  },
+  "cdi": {
+   "vendor": "Philips",
+   "year": "1990"
+  },
+  "colecovision": {
+   "vendor": "Coleco",
+   "year": "1982"
+  },
+  "cps1": {
+   "vendor": "Capcom",
+   "year": "1988"
+  },
+  "cps2": {
+   "vendor": "Capcom",
+   "year": "1993"
+  },
+  "cps3": {
+   "vendor": "Capcom",
+   "year": "1996"
+  },
+  "dos": {
+   "vendor": "Microsoft",
+   "year": "1981"
+  },
+  "dreamcast": {
+   "vendor": "Sega",
+   "year": "1998"
+  },
+  "favorites": {
+   "vendor": "Various"
+  },
+  "fds": {
+   "vendor": "Nintendo",
+   "year": "1986"
+  },
+  "gamecube": {
+   "vendor": "Nintendo",
+   "year": "2001"
+  },
+  "gamegear": {
+   "vendor": "Sega",
+   "year": "1990"
+  },
+  "gb": {
+   "vendor": "Nintendo",
+   "year": "1989"
+  },
+  "gba": {
+   "vendor": "Nintendo",
+   "year": "2001"
+  },
+  "gbc": {
+   "vendor": "Nintendo",
+   "year": "1998"
+  },
+  "genesis": {
+   "vendor": "Sega",
+   "year": "1988"
+  },
+  "gw": {
+   "vendor": "Nintendo",
+   "year": "1980"
+  },
+  "intellivision": {
+   "vendor": "Mattel",
+   "year": "1979"
+  },
+  "lastplayed": {
+   "vendor": "Various"
+  },
+  "mastersystem": {
+   "vendor": "Sega",
+   "year": "1985"
+  },
+  "megadrive": {
+   "vendor": "Sega",
+   "year": "1988"
+  },
+  "msx": {
+   "vendor": "Microsoft",
+   "year": "1983"
+  },
+  "mvs": {
+   "vendor": "SNK",
+   "year": "1990"
+  },
+  "n64": {
+   "vendor": "Nintendo",
+   "year": "1996"
+  },
+  "naomi": {
+   "vendor": "Sega",
+   "year": "1998"
+  },
+  "nds": {
+   "vendor": "Nintendo",
+   "year": "2004"
+  },
+  "neogeo": {
+   "vendor": "SNK",
+   "year": "1990"
+  },
+  "neogeocd": {
+   "vendor": "SNK",
+   "year": "1994"
+  },
+  "nes": {
+   "vendor": "Nintendo",
+   "year": "1983"
+  },
+  "ngp": {
+   "vendor": "SNK",
+   "year": "1998"
+  },
+  "ngpc": {
+   "vendor": "SNK",
+   "year": "1999"
+  },
+  "odyssey2": {
+   "vendor": "Magnavox",
+   "year": "1978"
+  },
+  "pcecd": {
+   "vendor": "NEC",
+   "year": "1988"
+  },
+  "pcengine": {
+   "vendor": "NEC",
+   "year": "1987"
+  },
+  "pico8": {
+   "vendor": "Lexaloffle",
+   "year": "2015"
+  },
+  "pokemini": {
+   "vendor": "Nintendo",
+   "year": "2001"
+  },
+  "ps2": {
+   "vendor": "Sony",
+   "year": "2000"
+  },
+  "psp": {
+   "vendor": "Sony",
+   "year": "2004"
+  },
+  "psx": {
+   "vendor": "Sony",
+   "year": "1994"
+  },
+  "recents": {
+   "vendor": "past 30 days"
+  },
+  "saturn": {
+   "vendor": "Sega",
+   "year": "1994"
+  },
+  "scummvm": {
+   "vendor": "Lucasfilm Games",
+   "year": "1987"
+  },
+  "sega32x": {
+   "vendor": "Sega",
+   "year": "1994"
+  },
+  "segacd": {
+   "vendor": "Sega",
+   "year": "1991"
+  },
+  "sg1000": {
+   "vendor": "Sega",
+   "year": "1983"
+  },
+  "snes": {
+   "vendor": "Nintendo",
+   "year": "1990"
+  },
+  "supergrafx": {
+   "vendor": "NEC",
+   "year": "1989"
+  },
+  "switch": {
+   "vendor": "Nintendo",
+   "year": "2017"
+  },
+  "tg16": {
+   "vendor": "NEC",
+   "year": "1987"
+  },
+  "tgcd": {
+   "vendor": "NEC",
+   "year": "1988"
+  },
+  "vboy": {
+   "vendor": "Nintendo",
+   "year": "1995"
+  },
+  "vectrex": {
+   "vendor": "Milton Bradley",
+   "year": "1982"
+  },
+  "vita": {
+   "vendor": "Sony",
+   "year": "2011"
+  },
+  "wii": {
+   "vendor": "Nintendo",
+   "year": "2006"
+  },
+  "wswan": {
+   "vendor": "Bandai",
+   "year": "1999"
+  },
+  "wswanc": {
+   "vendor": "Bandai",
+   "year": "1999"
+  },
+  "x68000": {
+   "vendor": "Sharp",
+   "year": "1987"
+  },
+  "zxspectrum": {
+   "vendor": "Sinclair",
+   "year": "1982"
+  }
+ }
+}
