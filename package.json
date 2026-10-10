@@ -1,6 +1,6 @@
 {
-  "name": "decky-console-panel",
-  "version": "0.1.0",
+  "name": "steam-deck-colorful",
+  "version": "1.0.0",
   "description": "Console artwork panel and per-game info for the Steam Deck library.",
   "type": "module",
   "scripts": {

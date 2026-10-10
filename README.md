@@ -34,11 +34,16 @@ See [docs/setup-details.md](docs/setup-details.md) for the full walkthrough.
 
 ### 2. Install
 
-- **From the Decky Store** (recommended, once Colorful is listed there):
-  open the Decky menu (the controller-icon button in Quick Access) → the
-  Store tab (the plug icon) → search for **Colorful** → Install.
-- **From source**: see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md#building-and-installing-from-source)
-  for building and deploying a checkout by hand.
+- **From a GitHub release** (recommended for now): in the Decky menu, open
+  the settings (gear icon), turn on **Developer mode** under General, then
+  under **Developer** choose **Install Plugin from URL** and enter:
+
+  ```
+  https://github.com/cedricdelpoux/steam-deck-colorful/releases/latest/download/Colorful.zip
+  ```
+
+- **From the Decky Store**: not listed yet.
+- **From source**: see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md#building-and-installing-from-source).
 
 ### 3. Configure
 

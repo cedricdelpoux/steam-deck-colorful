@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 
 BASE = 'https://retroachievements.org/API/%s.php'
-USER_AGENT = 'Colorful/0.1'   # Cloudflare rejects urllib's default agent
+USER_AGENT = 'Colorful/1.0'   # Cloudflare rejects urllib's default agent
 
 
 def _ssl_context():

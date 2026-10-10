@@ -8,3 +8,4 @@ __pycache__/
 # build assets/consoles/, not redistributed as-is.
 /art-source/hardware-set-source/
 *.tsbuildinfo
+out/

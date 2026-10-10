@@ -15,23 +15,11 @@ NAME="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["name"])
 HERE="$(cd "$(dirname "$0")" && pwd)"
 SSH=(ssh -i "$KEY" -o ConnectTimeout=10 "$DECK")
 
-if [ ! -f "$HERE/dist/index.js" ]; then
-  echo "dist/index.js missing -- run: npm install && npm run build" >&2
-  exit 1
-fi
+"$HERE/tools/package.sh" >/dev/null
 
-# Only what Decky reads at runtime: package.json is needed (its "type": "module"
-# picks the ES module loader), the rest of the tooling is not.
 echo "==> copying to $DECK"
-rsync -az --delete --delete-excluded \
-  -e "ssh -i $KEY -o ConnectTimeout=10" \
-  --include dist/ --include 'dist/**' \
-  --include assets/ --include 'assets/**' \
-  --include py_modules/ --include 'py_modules/*.py' \
-  --include main.py --include plugin.json --include package.json \
-  --include LICENSE --include README.md \
-  --exclude '*' \
-  "$HERE/" "$DECK:~/decky-colorful/"
+rsync -az --delete -e "ssh -i $KEY -o ConnectTimeout=10" \
+  "$HERE/out/$NAME/" "$DECK:~/decky-colorful/"
 
 echo "==> installing"
 "${SSH[@]}" "sudo -n true 2>/dev/null || { echo 'passwordless sudo unavailable -- run the install block by hand on the Deck' >&2; exit 2; }

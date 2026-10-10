@@ -14,7 +14,7 @@ main.py           backend entry point (a Decky "Plugin" class)
 py_modules/       everything main.py imports -- one file per concern (see table below)
 src/index.tsx     the settings sheet's React UI, compiled to dist/ by rollup
 assets/           shipped as-is: panel.js, panel-structure.css, consoles/ (the built artwork)
-tools/            packaging-time scripts (artwork and color table), not shipped
+tools/            packaging scripts (artwork, color table, release zip), not shipped
 art-source/       source renders that tools/build_assets.py downscales into assets/consoles/
 preview/          browser sandbox for the design, not shipped
 install.sh        deploys a checkout to the Deck and restarts the plugin loader
@@ -61,11 +61,14 @@ Once Colorful is listed on the Decky store, that's the normal way to install
 it — this is only for building and deploying straight from a checkout.
 
 ```bash
-npm install && npm run build
+npm install
 DECK=deck@<deck-ip> SSH_KEY=~/.ssh/<key> ./install.sh
 ```
 
-`SSH_KEY` defaults to `~/.ssh/id_ed25519`.
+`SSH_KEY` defaults to `~/.ssh/id_ed25519`. `install.sh` runs
+`tools/package.sh`, which builds the frontend and assembles exactly what
+Decky reads at runtime into `out/Colorful/`, plus `out/Colorful.zip` for
+releases.
 
 `~/homebrew/plugins` is root-owned, so the script stages the files in the deck
 user's home and moves them in with sudo, then restarts `plugin_loader.service`.
@@ -74,8 +77,12 @@ user's home and moves them in with sudo, then restarts `plugin_loader.service`.
 `"type": "module"` field to decide how to load the bundle: present it picks
 `ESMODULE_V1` (`import()`, which understands `export`); absent it silently
 falls back to `LEGACY_EVAL_IIFE` (`eval()`, which throws `SyntaxError:
-Unexpected token 'export'` on our rollup output). `install.sh` only copies
-what is read at runtime, `package.json` included.
+Unexpected token 'export'` on our rollup output).
+
+## Releasing
+
+Bump `version` in `package.json`, run `tools/package.sh`, and attach
+`out/Colorful.zip` to a GitHub release tagged `v<version>`.
 
 ## Building the artwork
 
